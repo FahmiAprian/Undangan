@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital@1&family=Dancing+Script&family=Source+Serif+Pro:ital,wght@1,200&display=swap');
+* {
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+/* ----- LIST RESPONSIVE ------ */
+.button-terima {
+  position: absolute;
+  bottom: 180px;
+  left: 0;
+  right: 0;
+  color: black;
+  /* padding-top: 200px; */
+}
+.opening {
+  position: fixed;
+  /* top: -500px; */
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  background-image: url('../img/opening.webp');
+  background-color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.opened {
+  position: fixed;
+  /* top: -500px; */
+  top: -500px;
+  width: 100%;
+  z-index: 1;
+  background-image: url('../img/opening.webp');
+  background-color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: aqua;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-name: opened;
+}
+@keyframes opened {
+  0% {
+    top: 0px;
+  }
+  100% {
+    top: -500px;
+  }
+}
+@font-face {
+  font-family: 'wedding';
+  src: url('../Font1/Awesome\ Wedding.otf');
+}
+@font-face {
+  font-family: 'wed2';
+  src: url('../Font1/wed2.ttf');
+}
+/*---- LIST SUB PART ----*/
+.btn-padding {
+  padding: 5px;
+  margin: 5px;
+}
+
+a {
+  color: black;
+}
+p {
+  padding: 10px;
+  font-family: 'Arvo', serif;
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Source Serif Pro', serif;
+}
+.p-atas {
+  margin-bottom: 0px;
+}
+.p-bawah {
+  margin-bottom: 0px;
+}
+h3 {
+  padding: 20px;
+  font-family: 'Dancing Script', cursive;
+  font-size: 100px;
+  color: rgb(68, 58, 58);
+}
+
+.slide-background {
+  background-image: url('../img/bg-slide.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-color: rgba(224, 42, 42, 0.878); */
+  height: 100%;
+  padding: 4px;
+}
+
+.slide-background p {
+  padding: 3px;
+}
+
+.wedding {
+  font-family: 'wed2';
+  font-size: 60px;
+  font-weight: 10px;
+  color: #000;
+  text-shadow: 3px 3px rgba(246, 246, 245, 0.7);
+  position: relative;
+  animation-name: wedding;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+}
+@keyframes wedding {
+  0% {
+    left: 0px;
+    top: -100px;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+
+.loc-date {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  text-align: center;
+  margin: 0px auto;
+}
+
+.icon {
+  margin-top: 23px;
+  margin-left: 65%;
+}
+.icon2 {
+  margin-top: 20px;
+  margin-right: 70%;
+}
+.hitunganMundur {
+  font-family: 'wed2';
+  font-size: 30px;
+}
+#waktuMundur {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+.waktudantempat {
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.button {
+  padding: 10px;
+}
+
+/* ----- LIST PART ---- */
+.satu {
+  /* background-color: #fef1e6; */
+  background-image: url('../img/bg-1.webp');
+
+  /* height: 100%; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10px;
+}
+.dua {
+  background-image: url('../img/bg-doa.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  /* background-color: #f9d5a7; */
+  height: 100%;
+  padding-top: 10px;
+}
+.tiga {
+  background-color: #ffffff;
+  height: 100%;
+  padding: 20px;
+}
+.empat {
+  background-color: #f8dc8f;
+}
+.lima {
+  background-image: url('../img/bg-doa.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-color: #ffb085; */
+  height: 100%;
+}
+.enam {
+  background-color: rgb(247, 246, 242);
+  height: 100%;
+}
+.tujuh {
+  background-image: url('../img/bg-konfirmasi.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
+}
+
+.delapan,
+.sembilan {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 3px;
+  margin: 3px;
+}
+.c1,
+.c2,
+.c3,
+.c4 {
+  flex: 6;
+  padding: 2px 3px;
+  margin: 3px 3px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  box-shadow: 2px 2px grey;
+}
+
+.sepuluh {
+  text-align: center;
+}
+.calon {
+  width: 100%;
+  border-radius: 25px 50px;
+  border: 4px solid #eff0ee;
+}
+
+/* snow */
+body {
+  background: red;
+}
+/* customizable snowflake styling */
+.snowflake {
+  color: #fff;
+  font-size: 1em;
+  font-family: Arial;
+  text-shadow: 0 0 1px #000;
+}
+
+@-webkit-keyframes snowflakes-fall {
+  0% {
+    top: -10%;
+  }
+  100% {
+    top: 100%;
+  }
+}
+@-webkit-keyframes snowflakes-shake {
+  0% {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+  50% {
+    -webkit-transform: translateX(80px);
+    transform: translateX(80px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+}
+@keyframes snowflakes-fall {
+  0% {
+    top: -10%;
+  }
+  100% {
+    top: 100%;
+  }
+}
+@keyframes snowflakes-shake {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(80px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+.snowflake {
+  position: fixed;
+  top: -10%;
+  z-index: 9999;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+  -webkit-animation-name: snowflakes-fall, snowflakes-shake;
+  -webkit-animation-duration: 10s, 3s;
+  -webkit-animation-timing-function: linear, ease-in-out;
+  -webkit-animation-iteration-count: infinite, infinite;
+  -webkit-animation-play-state: running, running;
+  animation-name: snowflakes-fall, snowflakes-shake;
+  animation-duration: 10s, 3s;
+  animation-timing-function: linear, ease-in-out;
+  animation-iteration-count: infinite, infinite;
+  animation-play-state: running, running;
+}
+.snowflake:nth-of-type(0) {
+  left: 1%;
+  -webkit-animation-delay: 0s, 0s;
+  animation-delay: 0s, 0s;
+}
+.snowflake:nth-of-type(1) {
+  left: 10%;
+  -webkit-animation-delay: 1s, 1s;
+  animation-delay: 1s, 1s;
+}
+.snowflake:nth-of-type(2) {
+  left: 20%;
+  -webkit-animation-delay: 6s, 0.5s;
+  animation-delay: 6s, 0.5s;
+}
+.snowflake:nth-of-type(3) {
+  left: 30%;
+  -webkit-animation-delay: 4s, 2s;
+  animation-delay: 4s, 2s;
+}
+.snowflake:nth-of-type(4) {
+  left: 40%;
+  -webkit-animation-delay: 2s, 2s;
+  animation-delay: 2s, 2s;
+}
+.snowflake:nth-of-type(5) {
+  left: 50%;
+  -webkit-animation-delay: 8s, 3s;
+  animation-delay: 8s, 3s;
+}
+.snowflake:nth-of-type(6) {
+  left: 60%;
+  -webkit-animation-delay: 6s, 2s;
+  animation-delay: 6s, 2s;
+}
+.snowflake:nth-of-type(7) {
+  left: 70%;
+  -webkit-animation-delay: 2.5s, 1s;
+  animation-delay: 2.5s, 1s;
+}
+.snowflake:nth-of-type(8) {
+  left: 80%;
+  -webkit-animation-delay: 1s, 0s;
+  animation-delay: 1s, 0s;
+}
+.snowflake:nth-of-type(9) {
+  left: 90%;
+  -webkit-animation-delay: 3s, 1.5s;
+  animation-delay: 3s, 1.5s;
+}
+/* Demo Purpose Only*/
+.demo {
+  font-family: 'Raleway', sans-serif;
+  color: #fff;
+  display: block;
+  margin: 0 auto;
+  padding: 15px 0;
+  text-align: center;
+}
+.demo a {
+  font-family: 'Raleway', sans-serif;
+  color: #000;
+}
